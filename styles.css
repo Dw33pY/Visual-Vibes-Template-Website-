@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+body {
+    font-family: 'Chiller', sans-serif ;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url("images/pexels-paduret-1193743.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 90vh;
+}
+
+
+.welcome{
+    color: cadetblue;
+    font-size: 4.5rem;
+    padding-top: 30vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+.begin{
+    padding: 20px 70px;
+    background-color: rgba(255, 255, 255, 0.419);
+    font-family: 'Chiller', sans-serif ;
+    font-size: 3rem;
+    color:white;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 25px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+.begin i {
+    margin-left: 10px;
+}
+
+
+.begin:hover{
+    transform: scale(1.05);
+    background-color: black;
+    border: 3px solid white;
+}
+
+
+
+footer {
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    background-color: black;
+    width: 100%;
+    height: auto;
+    padding: 4vh;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: white;
+    font-size: 1.5rem;
+}
+.social-icons a:hover {
+    color: rgb(232, 48, 48);
+}
+
+
+/* Home Page Styling */
+
+
+.navbar {
+    background: linear-gradient(90deg, rgb(186, 100, 100), rgb(40, 72, 118));
+    height: 9vh;
+}
+
+.nav{
+    padding: 1.5vh;
+    justify-content: space-between;
+    display: flex;
+}
+
+.brand{
+    /* background-color: black; */
+    width: 50px;
+    height: 40px;
+}
+
+.nav_links{
+    list-style: none;
+    margin-right: 2vh;
+    display: flex;
+}
+
+.nav_link{
+    margin-right: 50px;
+    font-size: 2em;
+    text-transform: capitalize;
+    color: white;
+}
+
+.nav_link i {
+    margin-right: 8px;
+}
+
+
+.nav_link a{
+    transition: transform 0.3s;
+    text-decoration: none;
+    color: white;
+}
+
+.nav_link a:hover{
+    color: rgb(232, 48, 48);
+    transform: scale(1.2);
+}
+
+
+.nav_link:hover{
+    transform: scale(1.2);
+}
+
+/* home content  */
+
+.main_container{
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero {
+    text-align: center;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+}
+
+.hero_image img{
+    width: 75%;
+    height: auto;
+    border-radius: 10%;
+    margin: 30px 10px;
+}
+
+.articles{
+    padding: 3vh 6vh;
+    display: flex;
+}
+
+.article{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px 10px;
+    color: white;
+    background-color: black;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.article img{
+    width: 150px;
+    height: auto;
+}
+
+.article:hover{
+    transform: translateY(-20px);
+}
+
+
+.cover_image img{
+    width: 100%;
+    height: 40vh;
+    border-radius: 150px;
+    padding: 0 30px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.cover_image img:hover{
+    border-radius: 0;
+}
+
+.sec_2{
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.gallery p{
+    margin-bottom: 3vh;
+}
+
+.image_container {
+    margin: 0 20PX;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+
+
+.image_container img{
+    width: 100%;
+    height: auto;
+    padding: 10px 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.image_container img:hover{
+    transform: scale(1.2);
+}
+
+
+
+@media (max-width: 768px) {
+    .articles {
+        flex-direction: column;
+        align-items: center;
+    }
+    .article img {
+        width: 80%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
